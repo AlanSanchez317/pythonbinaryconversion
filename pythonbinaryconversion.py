@@ -1,15 +1,19 @@
 import math
 
-<<<<<<< HEAD
-=======
-def decimalToBinary(n):
-    return "{0:b}".format(int(n))
+#Alan's work
+def decimalToBinary(n):#Made a function for decimal to Binary
+    return "{0:b}".format(int(n)) #This specifies that it comes out as binary
    
-dTb = int(input("What is your number?"))
+number = int(input("What is your number?")) #Asks the user what the number is
 
 
-dTb = str(dTb)
-print("The Binary of " + dTb + " is:")
-dTb = int(dTb)
-print(decimalToBinary(dTb))
->>>>>>> 268946e9666710c0785c239c6b626f57d1cff303
+dTb = str(number) #Turns the number into a string to work in a sentence
+print("The Binary of " + dTb + " is:") #Output sentence #1
+dTb = int(dTb) #Turns string back into number
+print(decimalToBinary(dTb)) #Output sentence #2
+
+#Noelle's Work
+
+hexadecimal = hex(number) #Uses the built in Hex function
+print("Here is your hexidecimal:") #Output sentence
+print(hexadecimal) #prints out the hexadecimal
